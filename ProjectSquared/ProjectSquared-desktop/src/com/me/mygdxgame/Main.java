@@ -8,8 +8,9 @@ public class Main {
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = "ProjectSquared";
 		cfg.useGL20 = false;
-		cfg.width = 480;
-		cfg.height = 320;
+		cfg.width = (int)java.awt.Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+		cfg.height = (int)java.awt.Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+		
 		
 		new LwjglApplication(new MyGdxGame(), cfg);
 	}
